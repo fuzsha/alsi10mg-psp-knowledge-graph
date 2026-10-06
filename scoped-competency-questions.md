@@ -1,71 +1,36 @@
 # Scoped Competency Questions
 
+*L is a label (the kind of number, like hardness). G is a group (small or large hatch spacing). S is a sample, and A and B are two samples. M is a measurement method. X and Z are limits: X starts at 2 spreads and Z starts at 1 spread of the group, and both can be changed.*
 
-## Master and Supporting
-**CQ1.** Which data values are abnormal (too high or too low)?
+**CQ1.** For a label L and a group G, which samples have a value that is more than the limit X away from the average of L in G?
 
-**CQ2.** If a value looks too high or too low, was it caused by one raw reading or by the whole sample?
-*(originally Q2 and Q14 merged, since both ask the same thing)*
+**CQ2.** For a label L and a group G, bring out all the raw readings behind every value that is over the limit X, and show if each one was caused by one raw reading or by the whole sample.
+Odd readings are marked. For an average, an odd reading is one far from the other readings of that sample. For a total, it is one that makes up most of the total.
+*Follow-up query:* with the odd readings taken out, is the value  still over the limit X? If yes, the whole sample is the cause. If no, those readings are the cause. If the raw readings are missing, or the value can't be matched, the answer is "can't tell".
 
-**CQ3.** Can the change in observed data be tracked to any process parameter?
-*(originally Q3)*
+**CQ3.** For two samples A and B and a label L, did the value change by more than the limit Z, and which process parameters are different between them? If only one is different, the change can be tracked to it.
+*List version:* for a sample A and a process parameter P, which samples differ from A only in P, and did L change?
 
-**CQ4.** Which data are calculated from processing parameters, which are just observed data, and which are calculated from observed data?
-*(originally Q5)*
+**CQ4.** For a label L, is it a setting, an observed value, calculated from settings, or calculated from observed data? If it is calculated, how is it calculated and from what?
 
-**CQ5.** What is the source of each data point, and what is the chain of data? (Where is each data point coming from, and what testing method was used to get it?)
-*(originally Q6)*
+**CQ5.** For a value V, where did it come from: how was it made, which raw readings are behind it, which file are they in, and what test method was used?
 
-**CQ6.** Which data has been measured using multiple methods, and do the different methods give similar results?
-*(originally Q7 and Q8 merged, since Q8 is the natural follow-up to Q7)*
+**CQ6.** Which properties are measured by more than one method, and for a sample S, what value does each method give and how far apart are they?
 
-**CQ7.** For mechanical property data, for a range of results, which parameter or structural property do they come from?
-*(originally Q9)*
+**CQ7.** For a mechanical label L and a range of values, which samples are in the range, and what are their process parameters and structure values?
 
-**CQ8.** How much data is used to get into the master table?
-*(originally Q10)*
+**CQ8.** For a sample S, how many raw readings are behind each of its values (per label), how many in total, and how many of them were used?
 
-**CQ9.** Which samples had the same processing input but ended up in a different structural regime?
-*(originally Q12)*
+**CQ9.** For a measurement method M (such as X-ray CT), were the settings the same for all samples?
 
-**CQ10.** Were all the observation/measurement settings (such as X-ray CT) kept the same?
-*(originally Q17)*
+**CQ10.** For a label L, which sample has the most raw readings behind its value?
 
-**CQ11.** Which sample had the most raw data?
-*(originally the first half of Q21)*
+**CQ11.** Which samples share the same VED but have different MED (power divided by the square root of speed), and why (which input differs)?
 
-## Rescoped
+**CQ12.** Which pairs of samples differ in exactly one process parameter, where one is marked dense (XCT porosity under 0.5%) and the other porous (over 0.5%)?
 
+**CQ13.** If a value of a sample S for a label L looks off, was it one reading or the whole sample, and is S also unusual in other labels?
 
-**CQ12.** *(originally Q11)* Which samples share the same VED but have different MVED, and why (which input differs)?
+**CQ14.** Retrieve and compare mechanical property values for small vs. large hatch spacing samples.
 
-**CQ13.** *(originally Q18)* If a sample's data looks off, can we tell whether the problem came from the sample itself or from how it was measured?
-
-**CQ14.** *(originally Q19)* Retrieve and compare mechanical property values for small vs. large hatch spacing samples.
-
-**CQ15.** *(originally Q23)* Retrieve the stored yield-point value for each sample and compare across samples.
-
-## Out of Scope
-
-**Q1.** Besides process parameters, what changes PV process features?
-This is asking *why* PV changes, not what PV is. The graph can show PV and how it's calculated, but figuring out what else might be influencing it is a physics question, not something to look up.
-
-**Q4.** Why is there a difference between the average and root mean square values for surface roughness?
-This is just math/stats the difference between a mean and an RMS is a known thing, not something the dataset or graph explains. 
-
-**Q13.** Why do we need process features when input parameters are already there? Do they do the same job?
-This is really asking "why did the researchers bother calculating VED/MVED instead of just using power and speed directly" that's a question about their methodology and reasoning, not something the data can answer.
-
-**Q15.** Does the pore count matter as much as pore volume?
-This is asking which one is a better predictor that's the kind of thing the original paper's machine learning model figured out through analysis. 
-**Q16.** Is the biggest pore a better predictor for failure than average pore size?
-Same issue as Q15 this is a prediction/importance question, not a lookup question.
-
-**Q20.** How does one structural property change another structural property, and can this be found in the data?
-This is asking for a cause-and-effect relationship between two structural features. That's exactly what the paper's ML analysis was built to find  it's not something that can be just pull out of the graph.
-
-**Q21 (second half).** Is there any relation between the sample with the most raw data and its process parameters?
-The "which sample had the most raw data" part is fine (that's CQ10), but asking if that's *related* to its process parameters is asking for a cause-and-effect explanation, which isn't a lookup.
-
-**Q22.** For finding Young's modulus, how much fitting is needed on the stress-strain curve?
-This is a methods question about how the curve-fitting was done  .
+**CQ15.** Retrieve the stored yield-point value for each sample and compare across samples.
