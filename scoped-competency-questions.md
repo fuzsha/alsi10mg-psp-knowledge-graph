@@ -2,7 +2,7 @@
 
 
 ## Master and Supporting
-**CQ1.** Which data values are abnormal (too high or too low)?*
+**CQ1.** Which data values are abnormal (too high or too low)?
 
 **CQ2.** If a value looks too high or too low, was it caused by one raw reading or by the whole sample?
 *(originally Q2 and Q14 merged, since both ask the same thing)*
