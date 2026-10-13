@@ -21,7 +21,7 @@
 
 **CQ8.** For a sample S, how many raw readings are behind each of its values (per label), how many in total, and how many of them were used?**[Sample, hasValue, Reported Value, hasLabel, Label, builtForm, Raw Data].**
 
-**CQ9.** For a measurement method M (such as X-ray CT), were the settings the same for all samples?**[Test Method, appliedTo, Sample, Setting, hasSetting].** 
+**CQ9.** For a measurement method M (such as X-ray CT), were the settings the same for all samples?**[Test Method, measuredWith, Sample, Settings, hasSettings].** 
 
 **CQ10.** For a label L, which sample has the most raw readings behind its value? **[Sample, hasValue, Reported Value, hasLabel, Label, builtFrom, Raw Data].**
 
