@@ -1,6 +1,6 @@
 # Link Names
 
-Links are the lowercase words in the bracketed lists of the competency questions. Each one connects two key notions, and it is read in the direction of the arrow.
+
 
 | Link | From → To | Meaning |
 |---|---|---|
