@@ -31,4 +31,23 @@
 
 **CQ13.** If a value of a sample S for a label L looks off, was it one reading or the whole sample, and is S also unusual in other labels? **[hasValue, Reported Value, hasLabel, Label, Sample].**
 
+**CQ14.** For a sample S, what are all of its values, with their labels?
+**[Sample, hasValue, Reported Value, hasLabel, Label]**
+
+**CQ15.** Which values have no raw readings behind them?
+**[Reported Value, builtFrom, Raw Data]**
+
+**CQ16.** For a source S (a file in the dataset, or a section of the paper), which values come from it?
+*Follow-up query:* which values come from the paper and not from the dataset?
+**[Source, hasSource, Reported Value, hasLabel, Label]**
+
+**CQ17.** If a raw reading or a process parameter changes, which values would be affected?
+**[Raw Data, builtFrom, Reported Value, calculatedBy, Calculation, hasInput, Process Parameter]**
+
+**CQ18.** For a group G, how many samples are dense and how many are porous?
+**[Group, memberOf, Sample, hasClass, Porosity Class]**
+
+**CQ19.** For a test method M, which labels does it give?
+**[Test Method, measuredWith, Label]**
+
 
