@@ -31,7 +31,7 @@
     * Rationale: The test that made the numbers: Vickers hardness, X-ray CT, Archimedes weighing, tensile test.
     * Competency Questions: CQ5, CQ6, CQ9, CQ18
 * Source
-    * Rationale: Where a fact comes from: a dataset file, a section of the paper, or worked out by us.
+    * Rationale: Where a fact comes from: a dataset file, a section of the paper, or worked out.
     * Competency Questions: CQ5, CQ14
 * Measured Property
     * Rationale: The thing being measured, such as porosity, whichever test measured it.
