@@ -37,8 +37,6 @@
     * Rationale: The thing being measured, such as porosity, whichever test measured it.
     * Competency Questions: CQ6
 
-# Link Names
 
-Each link is read in the direction of the arrow. Every pattern keeps its own version of its links.
 
 
