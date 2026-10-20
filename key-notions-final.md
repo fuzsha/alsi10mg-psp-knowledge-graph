@@ -41,34 +41,4 @@
 
 Each link is read in the direction of the arrow. Every pattern keeps its own version of its links.
 
-| Pattern | Link | From → To |
-|---|---|---|
-| Quantity | hasValue | Sample → Reported Value |
-| Quantity | hasLabel | Reported Value → Label |
-| Quantity | hasProcessParameter | Sample → Process Parameter |
-| Quantity | hasParameterLabel | Process Parameter → Label |
-| Aggregation | memberOf | Sample → Group |
-| Aggregation | builtFrom | Reported Value → Raw Data |
-| Aggregation | hasValue | Sample → Reported Value |
-| Aggregation | hasLabel | Reported Value → Label |
-| Aggregation | hasRawLabel | Raw Data → Label |
-| Provenance | hasSource | Reported Value → Source |
-| Provenance | recordedIn | Raw Data → Source |
-| Provenance | measuredWith | Reported Value → Test Method |
-| Provenance | testedWith | Sample → Test Method |
-| Provenance | hasValue | Sample → Reported Value |
-| Provenance | hasLabel | Reported Value → Label |
-| Provenance | hasRawLabel | Raw Data → Label |
-| Data Transformation | calculatedBy | Reported Value → Calculation |
-| Data Transformation | hasLabel | Reported Value → Label |
-| Data Transformation | usesAlgorithm | Calculation → Algorithm |
-| Data Transformation | hasRawInput | Calculation → Raw Data |
-| Data Transformation | hasParameterInput | Calculation → Process Parameter |
-| Data Transformation | hasValueInput | Calculation → Reported Value |
-| Data Transformation | hasRawLabel | Raw Data → Label |
-| Data Transformation | hasParameterLabel | Process Parameter → Label |
-| SOSA Observation | hasMeasuredProperty | Sample → Measured Property |
-| SOSA Observation | hasLabel | Measured Property → Label |
-| SOSA Observation | measuredWith | Measured Property → Test Method |
-| SOSA Observation | hasValue | Measured Property → Reported Value |
-| Explicit Typing | hasClass | Sample → Porosity Class |
+
