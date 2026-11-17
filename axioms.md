@@ -1,4 +1,4 @@
-# Axioms (combined ontology)
+# Axioms
 * Calculation: `usesAlgorithm exactly 1 Algorithm`
 * Label: `hasOrigin exactly 1 ValueOrigin`
 * Label: `hasQuantityKind exactly 1 QuantityKind`
